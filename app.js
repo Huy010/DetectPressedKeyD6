@@ -10,7 +10,12 @@ document.addEventListener("keydown", function (e) {
   alert.classList.add("hide");
   box.classList.remove("hide");
 
-  eKey.innerText = e.key;
+  if(e.code = 'Space') {
+     eKey.innerText = 'Space';
+  } else {
+      eKey.innerText = e.key;
+  }
+
   eLocation.innerText = e.location;
   eWhich.innerText = e.which;
   eCode.innerText = e.code;
