@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-
+    
 }
 
 .start__btn span{
@@ -27,10 +27,10 @@ body {
 
 .main {
     width: 100%;
-    display: none;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    transition: linear 0.5s;
 }
 
 .number {
@@ -57,12 +57,13 @@ body {
     padding-left: 80px;
     padding-right: 80px;
     margin-top: 20px;
+    transition: linear 0.5s;
 }
 
 .card {
     flex: 0 0 25%;
     max-width: 25%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 10px;
@@ -71,10 +72,11 @@ body {
 
 .card__header, 
 .card__notification {
-    padding: 20px 10px;
+    padding: 10px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 46px;
 }
 
 .card__header {
@@ -87,6 +89,6 @@ body {
     color: black;
 }
 
-.show {
-    display: flex;
+.hide {
+    display: none;
 }
